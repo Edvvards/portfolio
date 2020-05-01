@@ -1,0 +1,19 @@
+$background-color-dark: #292a32;
+$background-color-light: #efefef;
+$complimentary-color-dark: #393B43;
+$complimentary-color-light: #FEFFFF;
+$secondary-color: #41B3A3;
+$tertiary-color: #ff6472;
+$shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+$border: 10px;
+
+@import './components/general.scss';
+@import './components/img.scss';
+@import './components/buttons.scss';
+
+@import './components/container.scss';
+@import './components/nav.scss';
+@import './components/blogfilter.scss';
+
+@import './components/toppage.scss';
+@import './components/footer.scss';

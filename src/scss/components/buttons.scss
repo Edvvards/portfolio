@@ -1,0 +1,16 @@
+button {
+    padding: 20px;
+    background-color: $secondary-color;
+    color: inherit;
+    border: none;
+    border-radius: $border;
+    box-shadow: $shadow;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: step-start 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover {
+        opacity: 1;
+    }
+}

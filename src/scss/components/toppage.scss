@@ -1,0 +1,29 @@
+.fa-arrow-circle-up {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    font-size: 2em;
+    color: $secondary-color;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    opacity: 0.7s;
+    &:hover {
+        opacity: 1;
+        animation-name: wobble;
+        animation-duration: 0.2s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+    }
+}
+
+@keyframes wobble {
+    25% {
+        transform: translateX(-1px);
+    }
+    50% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

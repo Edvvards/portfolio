@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    margin: 20px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: solid 2px $tertiary-color;
+    ul {
+        display: flex;
+        list-style: none;
+        li {
+            padding: 2px 10px;
+        }
+    }
+}

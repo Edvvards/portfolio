@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+    background-color: $background-color-light;
+    color: $background-color-dark;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+    .toggler {
+        padding: 2px;
+        border-radius: $border;
+    }
+    &.dark-mode {
+        background-color: $background-color-dark;
+        color: $background-color-light;
+        .toggler {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+    &:hover {
+        color: $tertiary-color;
+    }
+}
+
+.flex-across {
+    display: flex;
+}
+
+.flex-down {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    align-items: center;
+    text-align: center;
+    .card {
+    padding: 30px;
+    transition: transform 1s;
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: $shadow;
+    }
+    .crop {
+        width: 260px;
+        height: 200px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .grid .card .crop {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
