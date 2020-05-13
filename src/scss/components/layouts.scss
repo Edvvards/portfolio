@@ -1,0 +1,57 @@
+//Flex layouts
+.flex-across {
+    display: flex;
+}
+
+.flex-down {
+    display: flex;
+    flex-direction: column;
+    > p {
+        padding: 10px 200px;
+    }
+    .grid {
+        padding: 100px 0px;
+    }
+}
+
+//Grid layouts
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+    grid-gap: 30px;
+    .card {
+    padding: 10px;
+    transition: transform 1s;
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: $shadow;
+        }
+    }
+}
+
+.reverse {
+    direction: rtl;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 30px;
+    align-items: center;
+    text-align: center;
+    .card {
+    padding: 10px;
+    transition: transform 1s;
+    border-radius: $border;
+    min-height: 450px;
+        &:hover {
+            box-shadow: $shadow;
+            img {
+                transition: transform 1s;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

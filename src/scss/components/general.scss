@@ -6,13 +6,16 @@
     scroll-behavior: smooth !important;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Baloo Bhaina 2', cursive;
     background-color: $background-color-light;
     color: $background-color-dark;
-    font-size: 16px;
+    font-size: 20px;
     transition: 0.3s ease-in-out;
-    height: 100%;
     .toggler {
         padding: 2px;
         border-radius: $border;
@@ -26,6 +29,10 @@ body {
     }
 }
 
+section {
+    min-height: 80vh;
+}
+
 a {
     outline: none;
     text-decoration: none;
@@ -36,45 +43,13 @@ a {
     }
 }
 
-.flex-across {
-    display: flex;
-}
-
-.flex-down {
-    display: flex;
-    flex-direction: column;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    align-items: center;
-    text-align: center;
-    .card {
-    padding: 30px;
-    transition: transform 1s;
+button {
+    transition: 0.3s;
     &:hover {
-        transform: scale(1.02);
-        box-shadow: $shadow;
-    }
-    .crop {
-        width: 260px;
-        height: 200px;
-        overflow: hidden;
-        img {
-            width: 100%;
-        }
-    }
+        color: white;
     }
 }
 
-@media only screen and (max-width: 940px) {
-    .grid .card .crop {
-        width: 200px;
-        height: 150px;
-    }
-}
-
-.text-center {
-    text-align: center;
+.active {
+    color: $tertiary-color;
 }

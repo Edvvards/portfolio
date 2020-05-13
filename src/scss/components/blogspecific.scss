@@ -1,0 +1,16 @@
+.article {
+    p p strong {
+        color: $tertiary-color;
+        font-size: 24px;
+        padding: 100px 0px 0px 0px;
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
+.blog-author {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}

@@ -4,13 +4,15 @@
   padding: 0;
   scroll-behavior: smooth !important; }
 
+html {
+  height: 100%; }
+
 body {
   font-family: 'Baloo Bhaina 2', cursive;
   background-color: #efefef;
   color: #292a32;
-  font-size: 16px;
-  transition: 0.3s ease-in-out;
-  height: 100%; }
+  font-size: 20px;
+  transition: 0.3s ease-in-out; }
   body .toggler {
     padding: 2px;
     border-radius: 10px; }
@@ -20,6 +22,9 @@ body {
     body.dark-mode .toggler {
       background-color: #41B3A3; }
 
+section {
+  min-height: 80vh; }
+
 a {
   outline: none;
   text-decoration: none;
@@ -28,50 +33,52 @@ a {
   a:hover {
     color: #ff6472; }
 
-.flex-across {
-  display: flex; }
+button {
+  transition: 0.3s; }
+  button:hover {
+    color: white; }
 
-.flex-down {
-  display: flex;
-  flex-direction: column; }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-  align-items: center;
-  text-align: center; }
-  .grid .card {
-    padding: 30px;
-    transition: transform 1s; }
-    .grid .card:hover {
-      transform: scale(1.02);
-      box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
-    .grid .card .crop {
-      width: 260px;
-      height: 200px;
-      overflow: hidden; }
-      .grid .card .crop img {
-        width: 100%; }
-
-@media only screen and (max-width: 940px) {
-  .grid .card .crop {
-    width: 200px;
-    height: 150px; } }
+.active {
+  color: #ff6472; }
 
 .text-center {
   text-align: center; }
 
+.title {
+  font-size: 36px;
+  text-align: center; }
+
+.secondary-color {
+  color: #41B3A3; }
+
+.tertiary-color {
+  color: #ff6472; }
+
+.underline {
+  text-decoration: underline; }
+
 .crop {
   width: 400px;
-  height: 300px;
-  overflow: hidden; }
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px; }
   .crop img {
     width: 100%; }
 
-@media only screen and (max-width: 940px) {
-  .crop {
-    width: 200px;
-    height: 150px; } }
+.crop2 {
+  width: 600px;
+  overflow: hidden;
+  border-radius: 10px; }
+  .crop2 img {
+    width: 100%; }
+
+.crop3 {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px; }
+  .crop3 img {
+    width: 100%; }
 
 button {
   padding: 20px;
@@ -88,6 +95,77 @@ button {
   button:hover {
     opacity: 1; }
 
+@media only screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr !important; }
+  header nav ul li {
+    display: none; }
+  header nav ul .fa-bars {
+    display: block;
+    padding-bottom: 16px; }
+  .flex-down > p {
+    padding: 10px 20px !important; }
+  .crop2 {
+    width: 230px;
+    height: 170px;
+    overflow: hidden; } }
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 28px; } }
+
+@media only screen and (max-width: 700px) {
+  .grid2 {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)) !important; }
+  .crop {
+    width: 230px;
+    height: 140px;
+    overflow: hidden; } }
+
+.flex-across {
+  display: flex; }
+
+.flex-down {
+  display: flex;
+  flex-direction: column; }
+  .flex-down > p {
+    padding: 10px 200px; }
+  .flex-down .grid {
+    padding: 100px 0px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  grid-gap: 30px; }
+  .grid .card {
+    padding: 10px;
+    transition: transform 1s; }
+    .grid .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
+
+.reverse {
+  direction: rtl; }
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 30px;
+  align-items: center;
+  text-align: center; }
+  .grid2 .card {
+    padding: 10px;
+    transition: transform 1s;
+    border-radius: 10px;
+    min-height: 450px; }
+    .grid2 .card:hover {
+      box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
+      .grid2 .card:hover img {
+        transition: transform 1s;
+        transform: scale(1.1); }
+
 .container {
   margin: 20px 30px; }
 
@@ -100,6 +178,9 @@ header {
   header svg {
     padding: 2px 10px;
     cursor: pointer; }
+  header .logo {
+    font-size: 26px;
+    font-family: inherit; }
   header nav ul {
     list-style: none;
     display: flex;
@@ -110,78 +191,54 @@ header {
     display: none; }
 
 .mobile-nav {
-  position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
-  color: red; }
-
-@media only screen and (max-width: 1000px) {
-  header nav {
-    padding: 10px 10px; }
-    header nav .fa-bars {
-      display: inline;
-      cursor: pointer; }
-    header nav ul li {
-      display: none; } }
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 90px;
-  height: 34px; }
-
-.switch input {
-  display: none; }
-
-.slider {
-  position: absolute;
-  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ff6472;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 34px; }
+  background-color: grey;
+  overflow-x: hidden;
+  transition: 0.3s ease-in-out; }
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; }
+    .mobile-nav ul li {
+      display: block !important; }
+  .mobile-nav .fa-window-close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2em; }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 50%; }
+.tag {
+  display: none; }
+  .tag + label {
+    padding: 0px 20px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 14px; }
+  .tag:checked + label {
+    background-color: #41B3A3; }
 
-input:checked + .slider {
-  background-color: #41B3A3; }
+.article p p strong {
+  color: #ff6472;
+  font-size: 24px;
+  padding: 100px 0px 0px 0px; }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3; }
+.article a {
+  text-decoration: underline; }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(55px); }
-
-/*------ ADDED CSS ---------*/
-.slider:after {
-  content: 'PLAY';
-  color: white;
-  display: block;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  font-size: 10px; }
-
-input:checked + .slider:after {
-  content: 'WORK'; }
+.blog-author {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center; }
 
 .fa-arrow-circle-up {
   position: fixed;

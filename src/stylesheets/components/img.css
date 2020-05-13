@@ -4,8 +4,3 @@
   overflow: hidden; }
   .crop img {
     width: 100%; }
-
-@media only screen and (max-width: 940px) {
-  .crop {
-    width: 200px;
-    height: 150px; } }

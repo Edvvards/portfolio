@@ -15,11 +15,9 @@ class DarkModeToggle extends Component {
   }
 
   handleModeChange() {
-    if(!this.state.darkMode) {
-      document.body.classList.add('dark-mode')
-    } else {
-      document.body.classList.remove('dark-mode')
-    }
+    !this.state.darkMode 
+    ? document.body.classList.add('dark-mode')
+    : document.body.classList.remove('dark-mode')
     this.setState({
       darkMode: (!this.state.darkMode)
     });
