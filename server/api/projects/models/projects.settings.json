@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Projects"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "builtWith": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string",
+      "maxLength": 53
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "img": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    }
+  }
+}
