@@ -9,11 +9,13 @@ constructor(props) {
 }
 
 componentDidMount() {
-    axios.get('http://localhost:1337/projects')
+    axios.get('http://localhost:1337/projects?_sort=createdAt:desc')
     .then(res => {
         this.setState({ projects: res.data });
     })
 }
+
+
 
 render() {
     return (

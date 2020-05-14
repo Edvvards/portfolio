@@ -5,22 +5,64 @@
     display: none; }
   header nav ul .fa-bars {
     display: block;
-    padding-bottom: 16px; }
+    padding-bottom: 8px; }
   .flex-down > p {
-    padding: 10px 20px !important; }
-  .crop2 {
-    width: 230px;
-    height: 170px;
-    overflow: hidden; } }
+    padding: 10px 20px !important; } }
 
-@media only screen and (max-width: 600px) {
-  .title {
-    font-size: 28px; } }
+@media only screen and (max-width: 800px) {
+  .crop2 {
+    width: 240px;
+    height: 220px; }
+  .crop3 {
+    width: 240px;
+    height: 160px; }
+  .outline {
+    margin: 20px !important;
+    padding: 10px !important; }
+    .outline > * {
+      padding: 10px !important; }
+  .lrg-btn {
+    padding: 20px 40px;
+    font-size: 1em; }
+  .fa-arrow-circle-up {
+    font-size: 1.4em !important; } }
 
 @media only screen and (max-width: 700px) {
   .grid2 {
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)) !important; }
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)) !important; } }
+
+@media only screen and (max-width: 600px) {
+  .grid2 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important; }
   .crop {
-    width: 230px;
+    width: 390px;
+    height: 200px;
+    overflow: hidden; }
+  .grid2 .card {
+    width: 400px !important; } }
+
+@media only screen and (max-width: 500px) {
+  .grid2 {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important; }
+    .grid2 .card {
+      min-height: 400px !important; }
+  .title, h2, p {
+    font-size: 18px; }
+  .crop {
+    width: 280px;
     height: 140px;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .grid2 .card {
+    width: 300px !important; } }
+
+@media only screen and (max-width: 400px) {
+  .grid2 {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important; }
+    .grid2 .card {
+      min-height: 410px !important; }
+  .crop {
+    width: 240px;
+    height: 120px;
+    overflow: hidden; }
+  .grid2 .card {
+    width: 236px !important; } }

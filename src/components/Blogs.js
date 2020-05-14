@@ -11,7 +11,7 @@ constructor(props) {
 }
 
 loadBlogs() {
-    axios.get(`http://localhost:1337/blogs`)
+    axios.get(`http://localhost:1337/blogs?_sort=createdAt:desc`)
     .then(res => {
         console.log(res.data)
         this.setState({ blogs: res.data, filteredBlogs: res.data.filter(blog => blog.tags === this.state.tags) });
@@ -28,9 +28,9 @@ changeTag(e) {
 
 render() {
     return (
-        <section className="container">
+        <section>
             <p className="text-center">Filter:</p>
-            <div className="flex-across">
+            <div className="flex-across mb10">
                 <div>
                     <input type="radio" name="tag" value="fun" onChange={this.changeTag} id="fun" className="tag" />
                     <label for="fun" >

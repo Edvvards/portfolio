@@ -1,7 +1,7 @@
 .tag {
   display: none;
   + label {
-    padding: 0px 20px;
+    padding: 10px 40px;
     box-shadow: $shadow;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -12,4 +12,12 @@
       background-color: $secondary-color;
     }
   }
+}
+
+label[for="fun"] {
+  border-radius: 10px 0px 0px 10px;
+}
+
+label[for="work"] {
+  border-radius: 0px 10px 10px 0px;
 }

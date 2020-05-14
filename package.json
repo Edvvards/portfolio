@@ -17,6 +17,7 @@
     "node-sass": "^4.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
@@ -26,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "scss": "node-sass --watch src/scss/ -o src/stylesheets",
-    "dev": "concurrently \"npm run start\" \"npm run scss\" \"cd ./server && npm run-script start \" \"cd ../portfolio-blog && npm run develop\""
+    "dev": "concurrently \"npm run start\" \"npm run scss\" \"cd ../portfolio-blog && npm run develop\""
   },
   "proxy": "http://localhost:1337",
   "eslintConfig": {

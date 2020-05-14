@@ -1,16 +1,22 @@
 button {
     padding: 20px;
     background-color: $secondary-color;
-    color: inherit;
+    color: white;
     border: none;
     border-radius: $border;
     box-shadow: $shadow;
     cursor: pointer;
-    opacity: 0.8;
-    transition: step-start 0.3s;
+    opacity: 0.6;
+    transition: ease-in-out 0.4s;
     font-weight: bold;
     text-transform: uppercase;
     &:hover {
         opacity: 1;
+        color: white;
     }
+}
+
+.lrg-btn {
+    padding: 60px 100px;
+    font-size: 1.4em;
 }
