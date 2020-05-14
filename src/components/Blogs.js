@@ -29,17 +29,19 @@ changeTag(e) {
 render() {
     return (
         <section>
-            <p className="text-center">Filter:</p>
-            <div className="flex-across mb10">
-                <div>
-                    <input type="radio" name="tag" value="fun" onChange={this.changeTag} id="fun" className="tag" />
-                    <label for="fun" >
-                        Fun
-                    </label>
-                    <input type="radio" name="tag" value="work" onChange={this.changeTag} id="work" className="tag" defaultChecked />
-                    <label for="work">
-                        Work
-                    </label>
+            <div className="m30">
+                <p className="text-center">Filter:</p>
+                <div className="flex-across mb10">
+                    <div>
+                        <input type="radio" name="tag" value="fun" onChange={this.changeTag} id="fun" className="tag" />
+                        <label for="fun" >
+                            Fun
+                        </label>
+                        <input type="radio" name="tag" value="work" onChange={this.changeTag} id="work" className="tag" defaultChecked />
+                        <label for="work">
+                            Work
+                        </label>
+                    </div>
                 </div>
             </div>
                 <div className="grid2">

@@ -5,6 +5,7 @@
     border-radius: $border;
     img {
         width: 100%;
+        
     }
 }
 
@@ -22,6 +23,7 @@
     height: 400px;
     overflow: hidden;
     border-radius: $border;
+    box-shadow: $shadow;
     img {
         width: 100%;
     }

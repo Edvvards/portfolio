@@ -24,34 +24,39 @@ class AppNavBar extends Component {
     let menu;
     if(!toggleMenu) {
       menu = 
-            <nav>
-              <ul>
-                <li><NavLink to="/" exact>Home</NavLink></li>
-                <li><NavLink to="/projects" exact>Projects</NavLink></li>
-                <li><NavLink to="/blog" exact>Blog</NavLink></li>
-                <li><NavLink to="/contact" exact>Contact</NavLink></li>
-                <li><DarkModeToggle /></li>
-                <FontAwesomeIcon icon={faBars} onClick={this.addActiveClass} />
-              </ul>
-            </nav>
+          <header className="header">
+            <p className="logo">Liam Edwards</p>
+              <nav>
+                <ul>
+                  <li><NavLink to="/" exact>Home</NavLink></li>
+                  <li><NavLink to="/projects" exact>Projects</NavLink></li>
+                  <li><NavLink to="/blog" exact>Blog</NavLink></li>
+                  <li><NavLink to="/contact" exact>Contact</NavLink></li>
+                  <li><DarkModeToggle /></li>
+                  <FontAwesomeIcon icon={faBars} onClick={this.addActiveClass} />
+                </ul>
+              </nav>
+          </header>
     } else {
       menu = 
-            <nav className="mobile-nav">
-              <FontAwesomeIcon icon={faWindowClose} onClick={this.addActiveClass}/>
-              <ul>
-                <li><NavLink to="/" onClick={this.addActiveClass} exact>Home</NavLink></li>
-                <li><NavLink to="/projects" onClick={this.addActiveClass} exact>Projects</NavLink></li>
-                <li><NavLink to="/blog" onClick={this.addActiveClass} exact>Blog</NavLink></li>
-                <li><NavLink to="/contact" onClick={this.addActiveClass} exact>Contact</NavLink></li>
-                <li><DarkModeToggle /></li>
-              </ul>
-            </nav>
+            <header>
+              <p className="logo">Liam Edwards</p>
+              <nav className="mobile-nav">
+                <FontAwesomeIcon icon={faWindowClose} onClick={this.addActiveClass}/>
+                <ul>
+                  <li><NavLink to="/" onClick={this.addActiveClass} exact>Home</NavLink></li>
+                  <li><NavLink to="/projects" onClick={this.addActiveClass} exact>Projects</NavLink></li>
+                  <li><NavLink to="/blog" onClick={this.addActiveClass} exact>Blog</NavLink></li>
+                  <li><NavLink to="/contact" onClick={this.addActiveClass} exact>Contact</NavLink></li>
+                  <li><DarkModeToggle /></li>
+                </ul>
+              </nav>
+            </header>
     }
     return (
-        <header>
-            <p className="logo">Liam Edwards</p>
+        <div>
             { menu }
-        </header>
+        </div>
     );
   }
 }

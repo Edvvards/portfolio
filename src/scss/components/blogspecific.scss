@@ -9,13 +9,35 @@
     }
     p p {
         padding-bottom: 20px;
+        width: 100%;
         strong {
             color: $tertiary-color;
             font-size: 24px;
         }
     }
+    p img {
+        max-width: 70%;
+        border-radius: $border;
+        box-shadow: $shadow;
+        text-align: center;
+    }
     a {
         text-decoration: underline;
+    }
+    pre {
+        border-radius: $border;
+        box-shadow: $shadow;
+        border-left: 3px solid $secondary-color;
+        page-break-inside: avoid;
+        font-family: monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: 1em 1.5em;
+        display: block;
+        word-wrap: break-word;
     }
 }
 

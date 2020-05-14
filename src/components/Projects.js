@@ -20,7 +20,7 @@ componentDidMount() {
 render() {
     return (
         <section className="container">
-            <div className="title secondary-color">
+            <div className="title secondary-color m30">
                 Check out some of the projects I have worked on
             </div>
             <div className="grid2">
