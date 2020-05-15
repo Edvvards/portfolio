@@ -13,7 +13,7 @@ class BlogSpecific extends Component {
         axios.get(`http://localhost:1337/blogs/${this.state.id}`)
         .then(res => {
             this.setState({ blog: res.data });
-        })
+        });
     }
 
 render() {
@@ -35,7 +35,12 @@ render() {
         )
     } else {
         return (
-        <div>loading</div>
+        <section>
+            <div className="loading-background">
+                <div className="loading"></div>
+                <p className="blog-author">Loading...</p>
+            </div>
+        </section>
         );
     }
   }

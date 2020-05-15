@@ -23,7 +23,7 @@ render() {
         const clean = DOMPurify.sanitize(parsedContent);
         return (
             <section className="flex-down article container">
-               <h2 className="title secondary-color">{this.state.project.title}</h2>
+               <h2 className="title secondary-color m30">{this.state.project.title}</h2>
                <div className="crop">
                     <img src={ this.state.project.img } alt={ this.state.project.title }/>
                 </div>
@@ -35,7 +35,12 @@ render() {
         )
     } else {
         return (
-            <div>loading</div>
+            <section>
+                <div className="loading-background">
+                    <div className="loading"></div>
+                    <p className="blog-author">Loading...</p>
+                </div>
+            </section>
         )
     }
   }
