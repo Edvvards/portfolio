@@ -1,9 +1,9 @@
 @media only screen and (max-width: 1200px) {
   .grid {
     grid-template-columns: 1fr !important; }
-  .header nav ul li {
+  header nav ul li {
     display: none; }
-  .header nav ul .fa-bars {
+  header nav ul .fa-bars {
     display: block;
     padding-bottom: 8px; }
   .flex-down > p {

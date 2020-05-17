@@ -5,18 +5,19 @@ import axios from 'axios';
 class Blogs extends Component {
 constructor(props) {
     super(props);
-    this.state = { blogs: [], tags: 'work', url: '/blog/', filteredBlogs: [] }
+    this.state = { blogs: null, tags: 'work', url: '/blog/', filteredBlogs: [] }
     this.changeTag = this.changeTag.bind(this);
     this.loadBlogs = this.loadBlogs.bind(this);
 }
 
 loadBlogs() {
-    axios.get(`http://localhost:1337/blogs?_sort=createdAt:desc`)
+    axios.get(`http://localhost:1337/blogs?_sort=createdAt:desc&publish=true`)
     .then(res => {
         console.log(res.data)
         this.setState({ blogs: res.data, filteredBlogs: res.data.filter(blog => blog.tags === this.state.tags) });
-    })
+    });
 }
+
 
 componentDidMount() {
     this.loadBlogs()    
@@ -27,6 +28,7 @@ changeTag(e) {
 }
 
 render() {
+    if(this.state.blogs) {
     return (
         <section>
             <div className="m30">
@@ -59,7 +61,17 @@ render() {
                         ))}
                 </div>
         </section>
-    );
+    )
+    } else {
+        return (
+        <section>
+            <div className="loading-background">
+                <div className="loading"></div>
+                <p className="blog-author">Loading...</p>
+            </div>
+        </section>
+        )
+    }
   }
 }
 

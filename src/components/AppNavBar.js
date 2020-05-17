@@ -24,8 +24,6 @@ class AppNavBar extends Component {
     let menu;
     if(!toggleMenu) {
       menu = 
-          <header className="header">
-            <p className="logo">Liam Edwards</p>
               <nav>
                 <ul>
                   <li><NavLink to="/" exact>Home</NavLink></li>
@@ -36,11 +34,8 @@ class AppNavBar extends Component {
                   <FontAwesomeIcon icon={faBars} onClick={this.addActiveClass} />
                 </ul>
               </nav>
-          </header>
     } else {
       menu = 
-            <header>
-              <p className="logo">Liam Edwards</p>
               <nav className="mobile-nav">
                 <FontAwesomeIcon icon={faWindowClose} onClick={this.addActiveClass}/>
                 <ul>
@@ -51,12 +46,12 @@ class AppNavBar extends Component {
                   <li><DarkModeToggle /></li>
                 </ul>
               </nav>
-            </header>
     }
     return (
-        <div>
+        <header>
+          <p className="logo">Liam Edwards</p>
             { menu }
-        </div>
+        </header>
     );
   }
 }

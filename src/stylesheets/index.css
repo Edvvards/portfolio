@@ -132,9 +132,9 @@ button {
 @media only screen and (max-width: 1200px) {
   .grid {
     grid-template-columns: 1fr !important; }
-  .header nav ul li {
+  header nav ul li {
     display: none; }
-  .header nav ul .fa-bars {
+  header nav ul .fa-bars {
     display: block;
     padding-bottom: 8px; }
   .flex-down > p {
@@ -262,7 +262,7 @@ button {
 .container {
   margin: 20px 30px; }
 
-.header {
+header {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -274,18 +274,18 @@ button {
   margin: 0px 30px;
   border-bottom: solid 2px #ff6472;
   backdrop-filter: blur(8px); }
-  .header svg {
+  header svg {
     padding: 2px 10px;
     cursor: pointer; }
-  .header .logo {
+  header .logo {
     font-size: 26px; }
-  .header nav ul {
+  header nav ul {
     list-style: none;
     display: flex;
     flex-direction: row; }
-    .header nav ul li {
+    header nav ul li {
       padding: 2px 10px; }
-  .header nav .fa-bars {
+  header nav .fa-bars {
     display: none; }
 
 .mobile-nav {
@@ -296,7 +296,7 @@ button {
   top: 0;
   left: 0;
   backdrop-filter: blur(40px);
-  overflow-x: hidden;
+  overflow: hidden;
   transition: 0.3s ease-in-out; }
   .mobile-nav ul {
     display: flex;
@@ -345,13 +345,12 @@ label[for="work"] {
   width: 100%; }
   .article p p strong {
     color: #ff6472;
-    font-size: 24px; }
+    font-size: 28px; }
 
 .article p img {
   max-width: 70%;
   border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  text-align: center; }
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
 
 .article a {
   text-decoration: underline; }

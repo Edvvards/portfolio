@@ -4,13 +4,12 @@ import ReactGA from 'react-ga';
 import { AppNavBar, Home, Blogs, BlogSpecific, Projects, ProjectSpecific, Contact, TopOfPage, AppFooter } from './components';
 import '../src/stylesheets/index.css';
 
-
-
 function App() {
   function initializeReactGA() {
     ReactGA.initialize('UA-166632739-1');
     ReactGA.pageview('/');
   }
+  
   return (
     <div className="App">
       <AppNavBar />
