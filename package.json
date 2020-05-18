@@ -25,13 +25,12 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "dev": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "start": "serve -s build",
-    "heroku-postbuild": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "node-sass --watch src/scss/ -o src/stylesheets"
+    "scss": "node-sass --watch src/scss/ -o src/stylesheets",
+    "dev": "concurrently \"npm run start\" \"npm run scss\""
   },
   "eslintConfig": {
     "extends": "react-app"
