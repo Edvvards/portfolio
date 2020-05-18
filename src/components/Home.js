@@ -34,7 +34,7 @@ class Home extends Component {
         <div className="grid reverse">
           <div>
             <h2 className="title secondary-color">Responsive Email Design</h2>
-            <p>I've created email templates from scratch and using WYSIWYG/CMS editors for a number of clients. I'm happy to advise on designs, best practices and accessibility as well as test across ESP's in softwares like Litmus. Check out some templates i've built <a href="https://github.com/Edvvards/email_templates" target="_blank" rel="noopener noreferrer" className="underline">here</a>.</p>
+            <p>I've created email templates from scratch and using WYSIWYG/CMS editors for a number of clients. I'm happy to advise on designs, best practices and accessibility as well as test across ESP's in softwares like Litmus.</p>
           </div>
           <div className="crop2">
             <img src="https://res.cloudinary.com/liamcloud/image/upload/v1588770487/undraw_opened_gi4n_a1yhua.svg" alt="Liam Edwards Portfolio" title="Liam Edwards Portfolio"/>
