@@ -9,7 +9,7 @@ constructor(props) {
 }
 
 componentDidMount() {
-    axios.get('http://localhost:1337/projects?_sort=createdAt:desc&publish=true')
+    axios.get('https://liamedwards-portfolio-cms.herokuapp.com/projects?_sort=createdAt:desc&publish=true')
     .then(res => {
         this.setState({ projects: res.data });
     });

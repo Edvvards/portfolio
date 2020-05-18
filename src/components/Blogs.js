@@ -11,7 +11,7 @@ constructor(props) {
 }
 
 loadBlogs() {
-    axios.get(`http://localhost:1337/blogs?_sort=createdAt:desc&publish=true`)
+    axios.get(`https://liamedwards-portfolio-cms.herokuapp.com/blogs?_sort=createdAt:desc&publish=true`)
     .then(res => {
         console.log(res.data)
         this.setState({ blogs: res.data, filteredBlogs: res.data.filter(blog => blog.tags === this.state.tags) });

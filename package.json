@@ -29,7 +29,6 @@
     "scss": "node-sass --watch src/scss/ -o src/stylesheets",
     "dev": "concurrently \"npm run start\" \"npm run scss\" \"cd ./server && npm run develop\""
   },
-  "proxy": "http://localhost:1337",
   "eslintConfig": {
     "extends": "react-app"
   },

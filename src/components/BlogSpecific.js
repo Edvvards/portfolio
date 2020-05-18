@@ -10,7 +10,7 @@ class BlogSpecific extends Component {
     }
     
     componentDidMount() {
-        axios.get(`http://localhost:1337/blogs/${this.state.id}`)
+        axios.get(`https://liamedwards-portfolio-cms.herokuapp.com/blogs/${this.state.id}`)
         .then(res => {
             this.setState({ blog: res.data });
         });

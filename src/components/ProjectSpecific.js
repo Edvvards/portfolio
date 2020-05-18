@@ -10,7 +10,7 @@ class ProjectSpecific extends Component {
     }
     
     componentDidMount() {
-        axios.get(`http://localhost:1337/projects/${this.state.id}`)
+        axios.get(`https://liamedwards-portfolio-cms.herokuapp.com/projects/${this.state.id}`)
         .then(res => {
             this.setState({ project: res.data });
         })
