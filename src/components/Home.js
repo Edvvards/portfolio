@@ -39,7 +39,7 @@ class Home extends Component {
         <div className="grid">
           <div>
             <h2 className="title secondary-color">Web Development</h2>
-            <p>I love building projects and learning new technologies. I've built projects that utilise: HTML, CSS, JavaScript, Node.JS, React, Sass, AEM  &amp; others. If you like to code, please <a href="https://github.com/Edvvards" className="underline" target="_blank" rel="noopener noreferrer">have a look at my Github</a> to see how this website, and others are built.</p>
+            <p>I love building projects and learning new technologies. I've built projects that utilise: HTML, CSS, JavaScript, Node.JS, React, Sass, AEM  &amp; others. If you like to code, please <a href="https://github.com/Edvvards" className="underline" target="_blank" rel="noopener noreferrer">have a look at my Github</a> to see how this website, and others, are built.</p>
           </div>
           <div className="crop2">
             <img src="https://res.cloudinary.com/liamcloud/image/upload/v1588770487/undraw_web_developer_p3e5_qnhpnp.svg" alt="Liam Edwards Portfolio" title="Liam Edwards Portfolio"/>
@@ -65,7 +65,6 @@ class Home extends Component {
             </Link>
           </div>
       </div>
-      
          
       </section>
     );

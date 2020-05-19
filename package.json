@@ -24,6 +24,7 @@
     "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "react-transition-group": "^4.4.1",
     "react-typing-animation": "^1.6.2"
   },
   "scripts": {
