@@ -24,7 +24,7 @@
     padding: 10px !important; }
     .outline > * {
       padding: 10px !important; }
-  .lrg-btn {
+  .lrg-btn, .med-btn {
     padding: 20px 40px;
     font-size: 1em; }
   .fa-arrow-circle-up {
@@ -49,7 +49,11 @@
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important; }
     .grid2 .card {
       min-height: 400px !important; }
-  .title, h2, p {
+  .headline {
+    font-size: 24px; }
+  .title {
+    font-size: 22px; }
+  h2, p {
     font-size: 18px; }
   .crop {
     width: 280px;

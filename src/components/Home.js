@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Typing from 'react-typing-animation';
 
 class Home extends Component {
   render() {
@@ -7,13 +8,26 @@ class Home extends Component {
       <section className="container flex-down">
         <div className="grid">
           <div>
-            <h1 className="title">Hi! I'm a <span className="secondary-color">Marketing Automation specialist</span> who likes to code. Keep scrolling to find out some more about me, head over to <Link to="/projects" className="underline">projects</Link> to see some code or look at the <Link to="/blog" className="underline">blog</Link> for some reading.</h1>
+          <Typing>
+            <h1 className="headline mb30">
+                <span>Marketing Automation Specialist</span>
+                <Typing.Delay ms={1000} />
+                <br />
+                <span>Front End Web Developer</span>
+            </h1>
+            <Typing.Delay ms={1000} />
+            <a href="#section2">
+              <button className="med-btn">
+                Learn more
+              </button>
+            </a>
+            </Typing>
           </div>
           <div className="crop3">
             <img src="https://res.cloudinary.com/liamcloud/image/upload/v1587121605/main_fxnk8d.png" alt="Liam Edwards Portfolio" title="Liam Edwards Portfolio"/>
           </div>
         </div>
-        <div className="grid reverse">
+        <div id="section2" className="grid reverse">
           <div>
             <h2 className="title secondary-color">Automation &amp; Lead Generation</h2>
             <p>I have experience in a number of automation processes including: writing apps to automate API calls, running SQL queries to maintain database health, creating chatbots with Twillio and using Marketing Automation platforms to create customer journeys. I like to help companies increase their lead generation through relevant, real-time messaging using email, nurture journeys, and multi-stage forms.<br />Here's a case study of how <Link to="/projects/5ebd29ecbdb6d31dc0897b73" className="underline">Canon increased their lead gen with Eloqua and Gated Content</Link>.</p>

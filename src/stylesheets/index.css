@@ -40,6 +40,9 @@ button {
 .mb10 {
   margin-bottom: 10px; }
 
+.mb30 {
+  margin-bottom: 30px; }
+
 .m30 {
   margin: 30px; }
 
@@ -72,6 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 .text-center {
   text-align: center; }
 
+.headline {
+  font-size: 50px;
+  text-align: center; }
+
 .title {
   font-size: 36px;
   text-align: center; }
@@ -101,8 +108,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; }
 
 .crop3 {
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 600px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
@@ -124,6 +131,10 @@ button {
   button:hover {
     opacity: 1;
     color: white; }
+
+.med-btn {
+  padding: 40px 60px;
+  font-size: 1em; }
 
 .lrg-btn {
   padding: 60px 100px;
@@ -155,7 +166,7 @@ button {
     padding: 10px !important; }
     .outline > * {
       padding: 10px !important; }
-  .lrg-btn {
+  .lrg-btn, .med-btn {
     padding: 20px 40px;
     font-size: 1em; }
   .fa-arrow-circle-up {
@@ -180,7 +191,11 @@ button {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important; }
     .grid2 .card {
       min-height: 400px !important; }
-  .title, h2, p {
+  .headline {
+    font-size: 24px; }
+  .title {
+    font-size: 22px; }
+  h2, p {
     font-size: 18px; }
   .crop {
     width: 280px;
