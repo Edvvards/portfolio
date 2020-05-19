@@ -11,11 +11,11 @@ class Home extends Component {
           <Typing>
             <h1 className="headline mb30">
                 <span>Marketing Automation Specialist</span>
-                <Typing.Delay ms={1000} />
+                <Typing.Delay ms={600} />
                 <br />
                 <span>Front End Web Developer</span>
             </h1>
-            <Typing.Delay ms={1000} />
+            <Typing.Delay ms={600} />
             <a href="#section2">
               <button className="med-btn">
                 Learn more
