@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import marked from 'marked';
 import DOMPurify from 'dompurify';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
 class ProjectSpecific extends Component {
     constructor(props) {
@@ -23,6 +26,7 @@ render() {
         const clean = DOMPurify.sanitize(parsedContent);
         return (
             <section className="flex-down article container">
+                <Link to="/projects"><FontAwesomeIcon icon={ faArrowAltCircleLeft } /> Back to all projects</Link>
                <h2 className="title secondary-color m30">{this.state.project.title}</h2>
                <div className="crop">
                     <img src={ this.state.project.img } alt={ this.state.project.title }/>

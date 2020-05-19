@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import marked from 'marked';
 import DOMPurify from 'dompurify';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
 class BlogSpecific extends Component {
     constructor(props) {
@@ -25,11 +28,12 @@ render() {
           }).replace(/ /g, '-');
         return (
             <section className="flex-down article container">
-            <h2 className="title secondary-color">{this.state.blog.title}</h2>
-            <p className="blog-author">{this.state.blog.author}, {date}</p>
+            <Link to="/blog"><FontAwesomeIcon icon={ faArrowAltCircleLeft } /> Back to all blogs</Link>
+            <h2 className="title secondary-color m30">{this.state.blog.title}</h2>
             <div className="crop">
                  <img src={ this.state.blog.img } alt={ this.state.blog.title }/>
              </div>
+             <p className="blog-author">{this.state.blog.author}, {date}</p>
              <p dangerouslySetInnerHTML={{ __html: clean }} />
          </section>
         )
