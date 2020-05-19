@@ -15,7 +15,7 @@ class Contact extends Component {
                             <p><FontAwesomeIcon icon={ faLinkedin } /> via LinkedIn</p>
                         </a>
                         <a href="mailto:liamedwards2010@gmail.com">
-                            <p><FontAwesomeIcon icon={ faEnvelope } /> shoot me an email - liamedwards2010@gmail.com</p>
+                            <p><FontAwesomeIcon icon={ faEnvelope } /> send me an email - liamedwards2010@gmail.com</p>
                         </a>
                     </div>
                     <div className="crop2">
