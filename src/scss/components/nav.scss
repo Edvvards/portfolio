@@ -62,3 +62,7 @@ header {
         font-size: 2em;
     }
 }
+
+.remove-blur {
+    backdrop-filter: unset;
+}

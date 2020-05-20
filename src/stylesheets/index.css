@@ -330,6 +330,9 @@ header {
     right: 5%;
     font-size: 2em; }
 
+.remove-blur {
+  backdrop-filter: unset; }
+
 .tag {
   display: none; }
   .tag + label {
